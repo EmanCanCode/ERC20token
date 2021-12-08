@@ -1,7 +1,7 @@
 pragma solidity ^0.5.0;
 
 // TODO:
-// [ ] Set the Fee Account
+// [X] Set the Fee Account
 // [ ] Deposit Ether
 // [ ] Withdraw Ether
 // [ ] Deposit Tokens
