@@ -1,5 +1,5 @@
 pragma solidity^0.5.0;
-import "openzeppelin-solidity/contracts/math/SafeMath.sol";
+import "openzeppelin-solidity/contracts/math/SafeMath.sol"; // Community vetted and trusted!
 
 contract Token {
     using SafeMath for uint;
@@ -32,7 +32,7 @@ contract Token {
         return true;
     }
 
-    // an internal function
+    // An internal function
     function _transfer(address _from, address _to, uint256 _value) internal {
         // Makes sure the recipient is valid
         require(_to != address(0));
