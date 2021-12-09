@@ -19,7 +19,7 @@ contract Token {
     event Approval(address indexed owner, address indexed spender, uint256 value);
 
 
-
+    
     constructor() public {
         totalSupply = 1000000 * (10 ** decimals);
         balanceOf[msg.sender] = totalSupply;
