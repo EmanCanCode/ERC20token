@@ -3,7 +3,7 @@ const { default: Web3 } = require("web3");
 const Token = artifacts.require("Token");
 const Exchange = artifacts.require("Exchange");
 
-module.exports = async function (deployer) {
+module.exports = async function(deployer) {
   // An array of all the accts on Ganache
   const accounts = await web3.eth.getAccounts()
   
