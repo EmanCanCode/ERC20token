@@ -18540,12 +18540,12 @@
         }
       },
       "links": {},
-      "address": "0x2Fde7a35397AdC81019Ce0e9b6FAa2bfbDCbF570",
-      "transactionHash": "0x2be67c9df3cec3f246f70941a95e25c971a130c8b2ffa373a160eaaf2e1b1bac"
+      "address": "0x4930346CbF6EC1aE7b2Dba0F5DdA1C534a6D60B5",
+      "transactionHash": "0x8c488a7e925f6743c180118b65ef79c7e0f19ac0a362ce290edf90efe0eecfd2"
     }
   },
   "schemaVersion": "3.2.3",
-  "updatedAt": "2021-12-27T17:56:16.661Z",
+  "updatedAt": "2022-01-03T18:21:01.529Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
