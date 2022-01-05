@@ -1,4 +1,4 @@
-import { create, get, groupBy, minBy, maxBy, reject, last } from 'lodash'
+import { get, groupBy, minBy, maxBy, reject } from 'lodash'
 import { createSelector } from 'reselect'
 import moment from 'moment'
 import { ETHER_ADDRESS, GREEN, RED, tokens, ether } from '../helpers'
@@ -283,7 +283,7 @@ export const priceChartSelector = createSelector(
         // Get last order price
         const lastPrice = get(lastOrder, 'tokenPrice', 0)
         // get second last order price
-        const secondLastPrice = get(secondLastPrice, 'tokenPrice', 0)
+        const secondLastPrice = get(secondLastOrder, 'tokenPrice', 0)
         
         return({
             lastPrice,
@@ -318,3 +318,6 @@ const buildGraphData = (orders) => {
     })
     return graphData
 }
+
+const orderCancelling = state => get(state, 'exchange.orderCancelling', false)
+export const orderCancellingSelector = createSelector(orderCancelling, status => status)
